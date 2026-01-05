@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience page</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <main class="row">
+        <!-- education section -->
+         <section class="col">
+            <header class="title">
+                <h2>EDUCATION</h2>
+            </header>
+            <div class="contents">
+                <div class="box">
+                    <h4>2014-2018</h4>
+                    <h3>High School</h3>
+                    <p>Hindu Higher Secondary School ambur
+                        SSLC-percentage-(56%) </p>
+                </div>
+                <div class="box">
+                    <h4>2018-2020</h4>
+                    <h3>High School</h3>
+                    <p>Hindu Higher Secondary School ambur
+                        HSC-percentage-(68%) </p>
+                </div>
+                <div class="box">
+                    <h4>2021-2025</h4>
+                    <h3>Bachelor's Degree</h3>
+                    <p>Priyadarshini Engineering College of Anna University
+                        Vaniyambadi
+                        Branch:Computer Science Engineering
+                        CGPA- (7.7) </p>
+                </div>
+            </div>
+
+         </section>
+         <section class="col">
+            <header class="title">
+                <h2>EXPERIENCE</h2>
+            </header>
+            <div class="contents">
+                <div class="box">
+                    <h3>Frontend Developer</h3>
+                    <p>Frontend Developer with basic knowledge of HTML,CSS and JavaScript.
+                        Able to create simple and responsive web pages. </p>
+                </div>
+                           <div class="box">
+                    <h3>Backend programmer</h3>
+                    <p>Backend Developer fresher with basic knowledge of server-side programming
+                        ,databases,and API concepts.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Photoshop</h3>
+                    <p>Perform simple image editing,background removal,color correction,and design adjustments</p>
+                </div>
+                <div class="box">
+                    <h3>MS-Excel</h3>
+                    <p>MS-Excel able to enter data,format sheets,and use basic formulas.Eager to learn advanced Excel functions.</p>
+                </div>
+            </div>
+         </section>
+    </main>
+</div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            /* background-color: #fafafa; */
+            display: flex;
+            background:url(bg6.jpg);
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100%;
+            padding: 35px 10%;
+        }
+        main.row{
+            display: grid;
+            grid-template-columns:  1fr 1fr;
+            grid-column-gap: 20px;
+        }
+        .col header.title{
+            font-family: 'Orbitron',sans-serif;
+            color: #0d6eaa;
+            padding: 0px 0px 20px 30px;
+            text-decoration: underline;
+        }
+        .col .contents{
+            padding: 0px 30px;
+            border-left: 2px solid #bababa;   
+        }
+        .col .contents .box{
+            position: relative;
+            padding: 20px;
+            border: 1px solid #eaeaea;
+            background-color: #ffffff;
+            cursor: pointer;
+            transition: all 0.4s;
+            margin-bottom: 20px;
+        }
+        .col .contents .box:hover{
+            box-shadow: 0px 3px 12px 0px #2903d2;
+            border: 1px solid transparent;
+
+        }
+        .col .contents .box::before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            left: calc(-15% + 22px);
+            top: 0;
+            background-color: #11a372;
+            border: 2px solid white;
+        }
+        .box h4{
+            position: relative;
+            color: #11a372;
+        }
+        .box h3{
+            font-size: 19px;
+            padding: 10px 0px 6px;
+            font-family: 'Orbitron',sans-serif;
+            color: #444;
+        }
+        .box p{
+            line-height: 1.2;
+            color: #666;
+            font-size: 17px;
+        }
+        @media(max-width:768px){
+            main.row{
+                grid-template-columns: 1fr;
+            }
+            .row .col:nth-child(2){
+                margin-top: 30px;
+            }
+        }
+    </style>
+</body>
+</html>
